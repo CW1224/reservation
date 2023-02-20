@@ -10,7 +10,7 @@ class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reservations')
     created_date = models.DateTimeField(auto_now=True)
     booking_date = models.DateField(auto_now=False)
-    booking_time =models.TimeField(auto_now=False)
+    booking_time = models.TimeField(auto_now=False)
     number_guests = models.IntegerField()
     booking_comments = models.TextField(max_length=500, blank=True)
     high_chair = models.BooleanField(null=False, blank=False, default=False)

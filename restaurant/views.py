@@ -6,3 +6,6 @@ from .models import Booking
 
 def open_home_page(request):
     return render(request, 'restaurant/base.html')
+
+def menu_show(request):
+    return render(request, 'restaurant/menu.html')
